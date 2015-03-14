@@ -1,0 +1,13 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use 5.010;
+use JSON;
+
+my $obj = {key=>'HyperLogLog Precision', values=>[]};
+while(<>){
+  chomp;
+  my ($x,$y) = split /,/,$_;
+  push @{$obj->{values}}, {x=>$x, y=>$y};
+}
+say encode_json([$obj]);
