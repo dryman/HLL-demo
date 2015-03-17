@@ -16,8 +16,9 @@ public class Sticky {
   
   static void printHLL(HLL hll) {
     cal.add(Calendar.HOUR, 1);
-    System.out.println(format.format(cal.getTime())+":00:00,/x"+Hex.encodeHexString(hll.toBytes()));
+    //System.out.println(format.format(cal.getTime())+":00:00,/x"+Hex.encodeHexString(hll.toBytes()));
     //System.out.println(Hex.encodeHexString(hll.toBytes()).length());
+    System.out.println(hll.toBytes().length * 8);
   }
 
   public static void main(String[] args) {

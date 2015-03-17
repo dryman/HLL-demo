@@ -11,7 +11,7 @@
   chart.xAxis.tickFormat(d3.format(',s'));
   chart.yAxis.tickFormat(d3.format(',.5f'));
     var data;
-    d3.json("precision.json", function(error, json) {
+    d3.json("accuracy.json", function(error, json) {
       data = json;
       console.log(data);
       d3.select('#chart svg')
