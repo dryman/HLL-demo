@@ -28,7 +28,7 @@ public class Sticky2 {
     for (int i = 0; i< 72; i++) {
       String time = format.format(cal.getTime())+":00:00,";
       int hour = cal.get(Calendar.HOUR);
-      double degree = hour*15;
+      double degree = hour*7.5;
       double radian = Math.toRadians(degree);
       long diff = (long)((Math.sin(radian)+0.7)*100000);
       
